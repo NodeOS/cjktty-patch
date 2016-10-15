@@ -43,5 +43,5 @@ versions:
 5. Extract the patch after applied to the kernel:
 
    ```sh
-   git format-patch -1 HEAD --stdout > cjktty.patch
+   git diff HEAD~1 -- > cjktty.patch
    ```
