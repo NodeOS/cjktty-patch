@@ -27,20 +27,21 @@ versions:
    git apply --whitespace=warn --check < /path/to/cjktty.patch
    ```
 
-3. Apply the patch:
+4. Fix patch until there's no failures
+4. Apply the patch and let it auto-adjust:
 
    ```sh
    git apply --whitespace=warn < /path/to/cjktty.patch
    ```
 
-4. Commit the changes of the patch:
+5. Commit the changes of the patch:
 
    ```sh
    git add .
    git commit -m "cjktty patch for Linux 4.8.1"
    ```
 
-5. Extract the patch after applied to the kernel:
+6. Extract the patch after applied to the kernel:
 
    ```sh
    git diff HEAD~1 -- > cjktty.patch
