@@ -25,12 +25,12 @@ versions:
    cd linux
    git apply --whitespace=warn --stat < /path/to/cjktty.patch
    git apply --whitespace=warn --check < /path/to/cjktty.patch
-```
+   ```
 
 3. Apply the patch:
 
    ```sh
-   git clone --branch v4.8 --depth 1 https://github.com/torvalds/linux.git
+   git apply --whitespace=warn < /path/to/cjktty.patch
    ```
 
 4. Commit the changes of the patch:
